@@ -63,3 +63,11 @@ $ npm run test:cov
 
 ## Deployment
 * most time i use Docker & Docker Swarm for deployment
+
+## GIT
+* most time I use GitFlow Strategy [Read More] https://medium.com/@knoldus/introduction-to-git-flow-4dbfd96e32e
+* Branch name & commits as following:-
+  1- Branching -> feat/ticketNumber/task-description
+  2- Branch names -> feat - fix - chore - refactor - test
+  3- Commit naming -> feat(optional context): [Task Number] description in max 2 lines
+  4- Commits ->  feat - fix - chore - refactor - test - perf .
