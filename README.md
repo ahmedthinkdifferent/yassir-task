@@ -43,7 +43,7 @@ $ npm run test:cov
 ## Base App Architecture
 * I mixed project packing between packaging by feature & by layer to get the benefits of both of them ,
 [Read More]https://medium.com/sahibinden-technology/package-by-layer-vs-package-by-feature-7e89cde2ae3a#:~:text=%E2%80%94%20Package%20by%20Feature%20is%20like,package%20will%20increase%20without%20bound.
-* used restful api versioning based on url [Read More] https://josipmisko.com/posts/rest-api-versioning
+* I used restful api versioning based on url [Read More] https://josipmisko.com/posts/rest-api-versioning
 * I used knex orm for simplicity, but most of the time i use Sequelize & TypeORM
 * I used a nest js cron job just for simplicity and run it every 5 mins to overcome 429 too many requests from third party
 * using nest js cron job is not a valid solution for production apps because we have many instances who are running at same time and to fix that issue we can use [Agenda] https://github.com/agenda/agenda
@@ -58,11 +58,12 @@ $ npm run test:cov
   2- create single response and use it on all app responses.
 
 ## Security
-* for simplicity people can call api without security, but in a production apps we may use JWT or Passito
-* api should has rate limiting to prevent DDOS Attack
+* for simplicity, people can call api without security, but in a production apps we may use JWT or Passito
+* api should have rate limiting to prevent DDOS Attack
 
 ## Deployment
-* most time i use Docker & Docker Swarm for deployment
+* most time i use Docker & Docker Swarm for deployment.
+* We can deploy through aws Lambda Functions.
 
 ## GIT
 * most time I use GitFlow Strategy [Read More] https://medium.com/@knoldus/introduction-to-git-flow-4dbfd96e32e
@@ -71,3 +72,6 @@ $ npm run test:cov
   2- Branch names -> feat - fix - chore - refactor - test
   3- Commit naming -> feat(optional context): [Task Number] description in max 2 lines
   4- Commits ->  feat - fix - chore - refactor - test - perf .
+
+## Observability
+* We may use Loki & Grafana - DataDog - NewRelic
