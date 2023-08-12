@@ -1,6 +1,4 @@
 import { DbConnectionService } from './core/data/db/service/db-connection.service';
-
-require('dotenv').config();
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { CityAirQualityCronService } from './core/job/city-air-quality-cron.service';

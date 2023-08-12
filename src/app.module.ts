@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { Module } from '@nestjs/common';
 import { ApiService } from './core/http/service/api.service';
 import { AirQualityService } from './domain/air-quality/v1/service/air-quality.service';
